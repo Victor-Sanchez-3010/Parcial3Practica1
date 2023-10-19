@@ -1,0 +1,91 @@
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+}
+
+/* Modo Blanco */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+button#toggleMode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: inherit;
+    transition: transform 0.3s;
+}
+
+button#toggleMode:hover {
+    transform: scale(1.5);
+}
+
+.index-container {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.index-container a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.index-container a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Utility Classes */
+
+/* Margin utilities */
+.mt-10 { margin-top: 10px; }
+.mb-10 { margin-bottom: 10px; }
+.ml-10 { margin-left: 10px; }
+.mr-10 { margin-right: 10px; }
+
+/* Padding utilities */
+.pt-10 { padding-top: 10px; }
+.pb-10 { padding-bottom: 10px; }
+.pl-10 { padding-left: 10px; }
+.pr-10 { padding-right: 10px; }
+
+/* Text alignment */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+/* Text transform */
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
