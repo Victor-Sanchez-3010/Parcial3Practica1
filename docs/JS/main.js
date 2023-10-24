@@ -6,11 +6,16 @@ document.addEventListener("DOMContentLoaded", function() {
         if (body.classList.contains("dark-mode")) {
             body.classList.remove("dark-mode");
             body.classList.add("light-mode");
-            btn.textContent = "🌙";  // Emoji de sol para el modo oscuro
+            btn.textContent = "🌙";  
         } else {
             body.classList.remove("light-mode");
             body.classList.add("dark-mode");
-            btn.textContent = "☀️";  // Emoji de luna para el modo blanco
+            btn.textContent = "☀️";  
         }
     });
+});
+
+AOS.init({
+    easing: 'ease-out-back',
+    duration: 1000
 });

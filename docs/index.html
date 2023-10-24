@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <script src="./JS/main.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Un vistazo a los mapaches</title>
 
@@ -17,6 +19,7 @@
 
 <body class="dark-mode">
     <button id="toggleMode">☀️</button>
+
     <header>
         <p>Por: Victor Sanchez</p>
         <div class="top-image">
@@ -24,80 +27,220 @@
                 <h1>Un vistazo a los Mapaches</h1>
             </div>
         </div>
+        
     </header>
 
     <main>
-        <details>
-            <summary>Indice</summary>
-            <ul>
-                <li><a href="#Intro" class="index">Introducción</a></li>
-                <li><a href="#Anato" class="index">Anatomía</a></li>
-                <li><a href="#Dieta" class="index">Dieta</a></li>
-                <li><a href="#Habitat" class="index">Hábitat</a></li>
-                <li><a href="#Compo" class="index">Comportamiento</a></li>
-                <li><a href="#Repro" class="index">Reproducción</a></li>
-                <li><a href="#Inter" class="index">Interacción</a></li>
-                <li><a href="#Conse" class="index">Conservación</a></li>
-                <li><a href="#Conclu" class="index">Conclusión</a></li>
-            </ul>
-        </details>
+        <section class="portafolio">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./imgs/anato.jpg"class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anatomia</h5>
+                      <p class="card-text">Breve introducción a la anatomía de los mapaches.</p>
+                      <a href="#Anato"class="btn btn-outline-info">Ver</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./imgs/dieta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dieta</h5>
+                      <p class="card-text">Breve explicacion de la dieta de los mapaches.</p>
+                      <a href="#Dieta"class="btn btn-outline-info">Ver</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./imgs/habitat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Habitat</h5>
+                      <p class="card-text">Breve explicacion del habitat de los mapaches.</p>
+                      <a href="#Habitat"class="btn btn-outline-info">Ver</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./imgs/comportamiento.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Comportamiento</h5>
+                      <p class="card-text">Breve explicacion del comportamiento de los mapaches.</p>
+                      <a href="#Habitat" class="btn btn-outline-info">Ver</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./imgs/repro.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Reproduccion</h5>
+                      <p class="card-text">Breve explicacion de la reproduccion de los mapaches.</p>
+                      <a href="#Intro"class="btn btn-outline-info">Ver</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./imgs/interaccion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Interacción con los humanos</h5>
+                      <p class="card-text">Breve explicacion de como interactuan los mapaches con los humanos.</p>
+                      <a href="#Anato"class="btn btn-outline-info">Ver</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./imgs/conservacion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Conservación</h5>
+                      <p class="card-text">Como podemos cuidar y respetarlos.</p>
+                      <a href="#Dieta"class="btn btn-outline-info">Ver</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./imgs/raccoon1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Conclusión</h5>
+                      <a href="#Habitat" class="btn btn-outline-info">Ver</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
 
-        <h1 id="Intro">Introducción</h1>
-        <p>
+        <h1 id="Intro" class="px-5">Introducción</h1>
+        <div class="pb-5">
+            <p class="px-5 pb-5">
             Los mapaches son mamíferos medianos conocidos por su inteligencia y destreza. Originarios de América del Norte, estos animales han sido capaces de adaptarse a diversos ambientes urbanos y rurales. 
             Esta investigación se enfoca en discutir las características más distintivas de los mapaches, incluyendo su anatomía, comportamiento, y su interacción con los humanos.
-        </p> <img src="./imgs/raccoon1.jpg" alt="Raccoon1" height="150" style="display: block; margin: 10px auto;">
+            </p>
 
-        <h1 id="Anato">Anatomía</h1>
-        <p>
-            Los mapaches son fácilmente reconocibles por sus marcas faciales que se asemejan a una máscara. 
-            Su pelaje es denso y de color grisáceo, y tienen un cuerpo robusto y una cola rayada. Además, poseen patas delanteras extremadamente hábiles que les permiten manipular objetos y abrir cierres.
-        </p> <img src="./imgs/anato.jpg" alt="Raccoon1" height="150" style="display: block; margin: 10px auto;">
+            <h1 id="Anato" class="px-5">Anatomía</h1>
+            <p class="px-5 pb-5">
+                Los mapaches, pertenecientes a la especie Procyon lotor, son animales nocturnos que han capturado la atención y el interés de muchos debido a sus características físicas y comportamentales únicas. Una de las marcas distintivas más notables de estos mamíferos es su patrón facial, que recuerda a una máscara. 
+                Esta "máscara" negra se extiende alrededor de sus ojos, contrastando con el pelaje más claro de su cara y cabeza, dándoles un aspecto distintivo y fácilmente identificable.
+                El pelaje del mapache es predominantemente gris, aunque puede presentar tonalidades que varían entre el gris claro y el oscuro. Este pelaje denso les sirve no solo como protección contra los elementos, sino también para camuflarse en su hábitat natural, especialmente durante sus actividades nocturnas. 
+                Además, su robusto cuerpo es una mezcla de fuerza y agilidad, permitiéndoles trepar árboles, nadar y desplazarse por diferentes terrenos con facilidad.
+            </p>
 
-        <h1 id="Dieta">Dieta</h1>
-        <p>
-            Los mapaches son omnívoros y tienen una dieta variada que incluye frutas, nueces, insectos, pequeños mamíferos, y desechos humanos. 
-            Su habilidad para encontrar alimento en diversos lugares les permite sobrevivir en una variedad de hábitats, incluyendo áreas urbanas.
-        </p> <img src="./imgs/dieta.jpg" alt="Raccoon1" height="150" style="display: block; margin: 10px auto;">
+            <h1 id="Dieta" class="px-5">Dieta</h1>
+            <p class="px-5 pb-5">
+                Los mapaches, con su innata curiosidad y adaptabilidad, son animales omnívoros por excelencia. Esta característica les permite consumir una amplia variedad de alimentos, lo que a su vez los hace increíblemente resilientes en diferentes entornos. 
+                Aunque su dieta puede variar dependiendo de la región y la estación del año, generalmente se inclinan hacia una mezcla de vegetales y proteínas.
+                Entre sus alimentos favoritos se encuentran las frutas, que les proporcionan las vitaminas y azúcares necesarios para mantener su energía. Las manzanas, bayas, uvas y cerezas son solo algunas de las frutas que pueden consumir con entusiasmo. Asimismo, su dieta se complementa con nueces y semillas, que les brindan grasas esenciales y proteínas. 
+                Al ser animales astutos, a menudo se les puede observar usando sus hábiles patas delanteras para abrir nueces o excavar en busca de semillas escondidas en el suelo.
+            </p>
 
-        <h1 id="Habitat">Hábitat</h1>
-        <p>
-            Originalmente, los mapaches habitaban bosques y áreas rurales, pero su capacidad de adaptación les ha permitido prosperar en entornos urbanos. 
-            Se distribuyen ampliamente en América del Norte, aunque también han sido introducidos en otras partes del mundo.
-        </p> <img src="./imgs/habitat.jpg" alt="Raccoon1" height="150" style="display: block; margin: 10px auto;">
+            <h1 id="Habitat" class="px-5">Hábitat</h1>
+            <p class="px-5 pb-5">
+                Los mapaches, con su distintivo "antifaz" y cola rayada, han sido durante mucho tiempo habitantes emblemáticos de los bosques y áreas rurales de América del Norte. Estos entornos naturales les ofrecían todo lo que necesitaban: refugio, alimento y espacio para reproducirse. 
+                En los densos bosques, podían trepar árboles para escapar de los depredadores o buscar alimento, y los cuerpos de agua cercanos les proporcionaban una fuente adicional de comida, como peces y crustáceos.
+                Sin embargo, con el crecimiento y expansión de las ciudades y la urbanización de grandes áreas de su hábitat natural, los mapaches enfrentaron nuevos desafíos. Donde muchos otros animales podrían haber fracasado o retrocedido, los mapaches demostraron una asombrosa capacidad de adaptación. 
+                En lugar de ser desplazados por completo, aprendieron a navegar por el entramado urbano, descubriendo que las ciudades podían ofrecerles una abundancia de alimentos, especialmente en forma de desechos humanos. Los parques urbanos, los patios traseros y las alcantarillas se convirtieron en sus nuevos dominios.
+            </p>
 
-        <h1 id="Compo">Comportamiento</h1>
-        <p>
-            Los mapaches son animales nocturnos y solitarios, aunque pueden formar grupos pequeños. 
-            Son conocidos por su inteligencia y destreza, lo que les permite resolver problemas y acceder a fuentes de alimento protegidas.
-        </p> <img src="./imgs/comportamiento.jpg" alt="Raccoon1" height="150" style="display: block; margin: 10px auto;">
+            <h1 id="Compo" class="px-5">Comportamiento</h1>
+            <p class="px-5 pb-5">
+                Los mapaches, con su misterioso antifaz y comportamiento esquivo, son criaturas que prefieren la cobertura de la noche. Esta naturaleza nocturna les permite buscar alimento y explorar su entorno con una menor probabilidad de encontrarse con depredadores o humanos. 
+                Durante las horas pico de luz solar, a menudo se refugian en sus guaridas, que pueden variar desde huecos en los árboles hasta sótanos en zonas urbanas.
+                A pesar de su tendencia a ser solitarios, los mapaches no son estrictamente animales aislados. En ciertas circunstancias, como cuando la comida es abundante o durante la temporada de cría, pueden formar grupos pequeños, conocidos como "gazas". Estos grupos, generalmente compuestos por hembras y sus crías, pueden trabajar juntos para encontrar alimento o protegerse de los depredadores. 
+                Sin embargo, fuera de estas situaciones, es común que los mapaches prefieran su propia compañía, especialmente los machos, que pueden ser territoriales.
+            </p>
 
-        <h1 id="Repro">Reproducción</h1>
-        <p>
-            La temporada de cría de los mapaches ocurre en la primavera, y las hembras suelen tener de dos a cinco crías por camada. 
-            Las crías permanecen con la madre por un periodo de tiempo antes de independizarse.
-        </p> <img src="./imgs/familia.jpg" alt="Raccoon1" height="150" style="display: block; margin: 10px auto;">
+            <h1 id="Repro" class="px-5">Reproducción</h1>
+            <p class="px-5 pb-5">
+                La vida reproductiva de los mapaches es un proceso fascinante que refleja su naturaleza adaptable y resistente. Durante la primavera, cuando las temperaturas comienzan a subir y los recursos alimenticios se vuelven más abundantes, los mapaches entran en su temporada de cría. 
+                Esta época del año es crucial para la supervivencia y el crecimiento de la población de mapaches, ya que las condiciones ambientales son óptimas para la crianza de las nuevas crías.
+                Después del apareamiento, las hembras gestan a sus crías durante aproximadamente 63-65 días antes de dar a luz. Aunque el número exacto puede variar, es común que una madre mapache tenga una camada de dos a cinco crías, conocidas como "kit" o "cachorros". 
+                Estos pequeños nacen ciegos y desvalidos, dependiendo completamente de su madre para el calor y la alimentación.
+            </p>
 
-        <h1 id="Inter">Interacción con humanos</h1>
-        <p>
-            La relación entre los mapaches y los humanos es compleja. 
-            Mientras que algunos los ven como plagas debido a su tendencia a revolver la basura, otros los valoran por su papel en el ecosistema. 
-            También, hay preocupaciones sobre la transmisión de enfermedades como la rabia. Pero no se puede negar que son adorables.
-        </p> <img src="./imgs/interaccion.jpg" alt="Raccoon1" height="150" style="display: block; margin: 10px auto;">
+            <h1 id="Inter" class="px-5">Interacción con humanos</h1>
+            <p class="pb-5 px-5" >
+                La interacción entre los mapaches y los humanos ha sido, sin duda, una de las relaciones más multifacéticas entre la vida silvestre y la civilización. 
+                A medida que las áreas urbanas y suburbanas se han expandido, la proximidad de estos astutos mamíferos a los asentamientos humanos ha llevado a una variedad de percepciones y reacciones hacia ellos.
+                Para aquellos que han experimentado la invasión de mapaches en sus propiedades, la visión de un contenedor de basura volcado o el rastro de desechos esparcidos puede ser frustrante. 
+                Esta tendencia de los mapaches a revolver la basura en busca de alimento, combinada con su habilidad para abrir cerraduras y acceder a lugares protegidos, les ha ganado la reputación de ser plagas en muchas áreas urbanas.
+            </p>
 
-        <h1 id="Conse">Conservación</h1>
-        <p>
-            Aunque los mapaches no están en peligro de extinción, enfrentan amenazas como la pérdida de hábitat y la persecución humana. 
-            Es importante entender y respetar a estos animales para garantizar su supervivencia a largo plazo.
-        </p> <img src="./imgs/conservacion.jpg" alt="Raccoon1" height="150" style="display: block; margin: 10px auto;">
+            <h1 id="Conse" class="px-5">Conservación</h1>
+            <p class="pb-5 px-5">
+                Los mapaches, a pesar de ser notoriamente adaptables y capaces de prosperar en una variedad de entornos, incluidos los urbanos, no están exentos de desafíos en el mundo moderno. 
+                Si bien no están clasificados como una especie en peligro de extinción, ciertas amenazas podrían tener impactos significativos en sus poblaciones si no se abordan adecuadamente.
+                Uno de los principales desafíos que enfrentan es la pérdida de hábitat. A medida que las áreas urbanas y agrícolas se expanden, los bosques y humedales naturales que los mapaches llaman hogar se reducen o fragmentan. Estas alteraciones pueden limitar el acceso a recursos, refugio y áreas de cría. 
+                Además, la fragmentación del hábitat puede llevar a una mayor mortalidad debido a accidentes de tráfico, ya que los mapaches se ven obligados a cruzar carreteras y autopistas con mayor frecuencia.
+                Por supuesto, también hay amenazas indirectas, como la contaminación, que pueden afectar la calidad del agua y el alimento que consumen, o el cambio climático, que puede alterar los hábitats y patrones de comportamiento de los mapaches.
+            </p>
 
-        <h1 id="Conclu">Conclusión</h1>
-        <p>
-            Los mapaches son criaturas fascinantes y adaptativas que han logrado coexistir con los humanos en diversos entornos. 
-            Su estudio no solo revela aspectos intrigantes de su comportamiento y anatomía, sino también la importancia de una coexistencia armoniosa entre los seres humanos y la vida silvestre.
-        </p>
+            <h1 id="Conclu" class="px-5">Conclusión</h1>
+            <p class="px-5">
+                Los mapaches, con su distintivo antifaz y patas delanteras ágiles, son una de las maravillas evolutivas de la naturaleza. 
+                Su presencia en diversas geografías y hábitats es testimonio de su increíble capacidad de adaptación y resiliencia.
+                En términos de comportamiento, los mapaches han mostrado una inteligencia notable. Son conocidos por su habilidad para resolver problemas, desde abrir cerraduras hasta manipular objetos con sus manos sensibles. Estas habilidades cognitivas, combinadas con su curiosidad innata, los han convertido en sujetos de interés para científicos y aficionados por igual. 
+                Al estudiarlos, podemos aprender no solo sobre ellos como especie, sino también sobre las capacidades cognitivas de los mamíferos en general.
+                El estudio de los mapaches nos ofrece valiosas lecciones sobre la importancia de la coexistencia armoniosa. En lugar de ver a la naturaleza y a la civilización como entidades separadas o en conflicto, podemos esforzarnos por crear un equilibrio donde ambas puedan prosperar. 
+                Al apreciar y respetar a los mapaches, y a la vida silvestre en general, no solo enriquecemos nuestro propio entendimiento del mundo natural, sino que también damos pasos hacia un futuro en el que la humanidad vive en armonía con el entorno que la rodea.
+            </p>
+        </div>
+
+        <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade container py-5">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imgs/anato.jpg" class="d-block w-100" alt="Raccoon1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/comportamiento.jpg" class="d-block w-100" alt="Raccoon2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/conservacion.jpg" class="d-block w-100" alt="Raccoon3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/dieta.jpg" class="d-block w-100" alt="Raccoon4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/familia.jpg" class="d-block w-100" alt="Raccoon5">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/habitat.jpg" class="d-block w-100" alt="Raccoon6">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/interaccion.jpg" class="d-block w-100" alt="Raccoon7">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/raccoon1.jpg" class="d-block w-100" alt="Raccoon8">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/repro.png" class="d-block w-100" alt="Raccoon9">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>    
         
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
